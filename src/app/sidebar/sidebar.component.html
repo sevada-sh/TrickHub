@@ -1,0 +1,122 @@
+<nav class="navbar navbar-expand-lg navbar-light position-relative top-0 right-0 bg-white w-100" id="sidebar">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-5 py-2">
+                <li class="nav-item">
+                    <a class="nav-link active bg-warning rounded-5 px-4" aria-current="page" routerLink="login">پنل
+            کاربری</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#callus" href="#">تماس
+            باما</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="aboutus">درباره ی ما</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">پشتیبانی</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="articles">مقالات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#nemunekarha" href="#">نمونه
+            کارها</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#ourservices" href="#">خدمات ما</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="">صفحه اصلی</a>
+                </li>
+            </ul>
+        </div>
+        <span class="navbar-text">
+      <a href="" class="d-flex justify-content-end" routerlink="">
+        <img src="../../../assets/img/logo.png" class="w-25 d-sm-block d-md-block d-inline" alt="logo">
+      </a>
+    </span>
+    </div>
+</nav>
+
+<!--callus  Modal -->
+<div class="modal fade" id="callus" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" dir="rtl">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">راه های ارتباطی</h5>
+            </div>
+            <div class="modal-body">
+                <p>شماره های تماس</p>
+                <p>شماره تماس 1 : 09375300694</p>
+                <p>شماره تماس 2 : 09107658565</p>
+
+
+                <small>آیا سوالی دارید؟ با ما تماس بگیرید</small><br>
+                <small>شما میتوانید ۲۴/۷ شبانه روز با مرکز پشتیبانی ما در تماس باشید</small>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--ourservices  Modal -->
+<div class="modal fade" id="ourservices" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" dir="rtl">
+    <div class="modal-dialog modal-dialog-centered " role="document">
+        <div class=" container modal-content text-center">
+            <div class="modal-body bg-light d-flex justify-content-between rounded-2 row">
+                <div class="bg-white m-2 p-4 rounded-3">
+                    <i class='bx bxs-cog configservice rounded-circle h1 p-2'></i>
+                    <h5 class="text-nowwrap">توسعه و پشتیبانی سایت</h5>
+                    <small class="text-secondary">اگر وب سایت دارید و برای توسعه و پشتیبانی آن به کمک نیاز داری، ما تمام و کمال در
+            خدما شما هستیم</small>
+                </div>
+                <div class="bg-white m-2 p-4 rounded-3">
+                    <i class='bx bxs-user personalsite rounded-circle h1 p-2'></i>
+                    <h5 class="text-nowwrap">طراحی وبسایت شخصی</h5>
+                    <small class="text-secondary">طراحی وب سایت تک صفحه ای یا چند صفحه ای با امکانات مورد نظر شما</small>
+                </div>
+                <div class="bg-white m-2 p-4 rounded-3">
+                    <i class='bx bxs-buildings companysite rounded-circle h1 p-2'></i>
+                    <h5 class="text-nowwrap">طراحی وبسایت شرکتی</h5>
+                    <small class="text-secondary">طراحی وب سایت شرکتی با جدیدترین تکنولوژی ها در سریع ترین زمان ممکن</small>
+                </div>
+                <div class="bg-white m-2 p-4 rounded-3">
+                    <i class='bx bxs-basket storesite rounded-circle h1 p-2'></i>
+                    <h5 class="text-nowwrap">طراحی وبسایت فروشگاهی</h5>
+                    <small class="text-secondary">طراحی وب سایت فروشگاهی با امکانات کامل و مورد نظر شما</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--nemunekarha  Modal -->
+<div class="modal fade" id="nemunekarha" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" dir="rtl">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

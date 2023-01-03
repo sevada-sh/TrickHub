@@ -1,0 +1,22 @@
+.main-img {
+    animation: up-down 4s infinite linear;
+}
+
+@keyframes up-down {
+    from {
+        top: 400px;
+    }
+    to {
+        top: 0px;
+    }
+}
+
+.seeservicesbtn {
+    background-image: linear-gradient(to right, #fdb05c, #fd8d5f);
+    box-shadow: 3px 4px 31px 0 rgb(253 165 93 / 54%);
+    border: none;
+}
+
+.padding {
+    padding-top: 135px;
+}

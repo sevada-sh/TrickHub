@@ -1,0 +1,20 @@
+.serviceicon {
+    font-size: 70px;
+}
+
+.maintext {
+    width: 800px;
+    margin: auto;
+}
+
+.servicetext {
+    width: 100px;
+}
+
+.freehost {
+    background: linear-gradient(to bottom right, #6badff, #add2ff);
+}
+
+.freeserviceicon {
+    font-size: 100px;
+}

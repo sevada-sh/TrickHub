@@ -1,0 +1,28 @@
+.configservice {
+    background-color: #007db3;
+}
+
+.personalsite {
+    background-color: #ff930d;
+}
+
+.companysite {
+    background-color: #9757f6;
+}
+
+.storesite {
+    background-color: #08e7ba;
+}
+
+ul {
+    padding: 10px;
+}
+
+a:hover {
+    text-decoration: underline dotted lightgray 4px;
+    text-underline-offset: 8px;
+}
+
+.navbar {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
