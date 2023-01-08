@@ -9,14 +9,11 @@ import { FooterComponent } from './footer/footer.component';
 import { NeedwebsiteComponent } from './needwebsite/needwebsite.component';
 import { ServiceComponent } from './service/service.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { PlanComponent } from './plan/plan.component';
 import { DesignprowebComponent } from './designproweb/designproweb.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { MainComponent } from './main/main.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -26,14 +23,11 @@ import { RegisterComponent } from './register/register.component';
     NeedwebsiteComponent,
     ServiceComponent,
     SidebarComponent,
-    PlanComponent,
     DesignprowebComponent,
     NotfoundComponent,
     AboutusComponent,
     ArticlesComponent,
     MainComponent,
-    LoginComponent,
-    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -42,8 +36,6 @@ import { RegisterComponent } from './register/register.component';
       { path: '', component: MainComponent },
       { path: 'articles', component: ArticlesComponent },
       { path: 'aboutus', component: AboutusComponent },
-      { path: 'login', component: LoginComponent },
-      { path: 'register', component: RegisterComponent },
       { path: '**', component: NotfoundComponent }
     ])
   ],
