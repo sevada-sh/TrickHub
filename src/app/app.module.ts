@@ -14,6 +14,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { MainComponent } from './main/main.component';
+import { PlanComponent } from './plan/plan.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { MainComponent } from './main/main.component';
     AboutusComponent,
     ArticlesComponent,
     MainComponent,
+    PlanComponent,
   ],
   imports: [
     BrowserModule,
