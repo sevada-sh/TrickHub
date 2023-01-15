@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule, Component } from '@angular/core';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,9 +12,11 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { DesignprowebComponent } from './designproweb/designproweb.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
-import { ArticlesComponent } from './articles/articles.component';
+import { blogsComponent } from './blogs/blogs.component';
 import { MainComponent } from './main/main.component';
 import { PlanComponent } from './plan/plan.component';
+import { BlogpageComponent } from './blogpage/blogpage.component';
+import { title } from 'process';
 
 @NgModule({
   declarations: [
@@ -27,21 +29,23 @@ import { PlanComponent } from './plan/plan.component';
     DesignprowebComponent,
     NotfoundComponent,
     AboutusComponent,
-    ArticlesComponent,
+    blogsComponent,
     MainComponent,
     PlanComponent,
+    BlogpageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      { path: '', component: MainComponent },
-      { path: 'articles', component: ArticlesComponent },
-      { path: 'aboutus', component: AboutusComponent },
-      { path: '**', component: NotfoundComponent }
+      { path: '', component: MainComponent, data: { Title: 'home' } },
+      { path: 'blogs', component: blogsComponent, data: { Title: 'blogs' } },
+      { path: 'aboutus', component: AboutusComponent, data: { Title: 'Aboutus' } },
+      { path: 'blogpage', component: BlogpageComponent },
+      { path: '**', component: NotfoundComponent, data: { Title: 'notfound' } }
     ])
   ],
-  providers: [],
+  providers: [Title],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
