@@ -1,3 +1,15 @@
 .blog {
     box-shadow: 0 10px 100px 0 rgb(77 77 119 / 16%);
 }
+
+li {
+    line-height: 20px;
+}
+
+.like {
+    cursor: pointer;
+}
+
+.bi-heart-fill {
+    color: red;
+}
