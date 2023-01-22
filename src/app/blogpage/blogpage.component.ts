@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { NgForm } from '@angular/forms';
+
+
 @Component({
   selector: 'app-blogpage',
   templateUrl: './blogpage.component.html',
@@ -27,6 +30,5 @@ export class BlogpageComponent implements OnInit {
     this.liked--;
     this.click = false;
   }
-
 }
 

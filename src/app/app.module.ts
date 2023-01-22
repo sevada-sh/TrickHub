@@ -16,7 +16,6 @@ import { blogsComponent } from './blogs/blogs.component';
 import { MainComponent } from './main/main.component';
 import { PlanComponent } from './plan/plan.component';
 import { BlogpageComponent } from './blogpage/blogpage.component';
-import { title } from 'process';
 
 @NgModule({
   declarations: [
