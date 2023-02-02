@@ -42,14 +42,37 @@
     </ul>
 </div>
 
-<form class="box container rounded-4 p-4 mb-5 col-md-12" dir="rtl">
-    <ul class="p-0">
-        <li class="d-flex align-items-center">
-            <i class="bi bi-chat-left-text-fill h3 px-3 text-warning"></i>
-            <h3>نظرات کاربران در رابطه با این دوره</h3>
+
+<div class="box container rounded-4 p-4 mb-5" dir="rtl">
+    <form>
+        <ul class="p-0">
+            <li class="d-flex align-items-center">
+                <i class="bi bi-chat-left-text-fill h3 px-3 text-warning"></i>
+                <h3>نظرات در رابطه با این مقاله</h3>
+            </li>
+        </ul>
+        <div class="container">
+            <div class="d-flex justify-content-around row">
+                <input type="text" name="username" class="col-md-6 col-sm-12 rounded-4 form-control w-50" placeholder="نام خود را وارد کنید">
+                <input type="text" name="userfamily" class="col-md-6 col-sm-12 rounded-4 form-control w-50" placeholder="نام خانوادگی خود را وارد کنید">
+            </div>
+        </div>
+        <textarea name="commenttextarea" class="rounded-4 p-4 mt-3 form-control col-md-12 col-sm-12" rows="10" cols="100" placeholder="نظر خود را وارد نمایید..."></textarea>
+        <br>
+        <input type="submit" value="ثبت نظر" class="btn btn-warning p-2 mt-2">
+    </form>
+    <ul class="mt-5">
+        <li class="list-unstyled commentlist mb-3 w-75 rounded-4 p-4">
+            <h5 class="d-inline">سوادا شاهوردیان <span class="text-secondary mx-4">|</span></h5>
+            <p class="d-inline text-secondary">ارسال شده در تاریخ</p>
+            <a href="" class="btn btn-success d-inline mx-2 p-1 py-0 text-decoration-none text-white"> ثبت
+        پاسخ</a>
+            <p class="text-secondary mt-4">عالی</p>
+        </li>
+        <li class="list-unstyled commentlist mb-3 reply w-75 rounded-4 p-4">
+            <h5 class="d-inline text-warning">تیم تریک هاب<span class="text-secondary mx-4">|</span></h5>
+            <p class="d-inline text-secondary">ارسال شده در تاریخ</p>
+            <p class="text-secondary mt-4">عالی</p>
         </li>
     </ul>
-    <textarea name="comment" class="rounded-4 p-4 mt-3 form-control" rows="10" cols="100" placeholder="نظر خود را وارد نمایید..."></textarea>
-    <br>
-    <input type="submit" value="ثبت نظر" class="btn btn-warning p-2 mt-2">
-</form>
+</div>
