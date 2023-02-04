@@ -16,6 +16,7 @@ import { blogsComponent } from './blogs/blogs.component';
 import { MainComponent } from './main/main.component';
 import { PlanComponent } from './plan/plan.component';
 import { BlogpageComponent } from './blogpage/blogpage.component';
+import { NemoonekarhaComponent } from './nemoonekarha/nemoonekarha.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { BlogpageComponent } from './blogpage/blogpage.component';
     blogsComponent,
     MainComponent,
     PlanComponent,
-    BlogpageComponent
+    BlogpageComponent,
+    NemoonekarhaComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +43,7 @@ import { BlogpageComponent } from './blogpage/blogpage.component';
       { path: 'blogs', component: blogsComponent, data: { Title: 'blogs' } },
       { path: 'aboutus', component: AboutusComponent, data: { Title: 'Aboutus' } },
       { path: 'blogpage', component: BlogpageComponent },
+      { path: 'nemoonekarha', component: NemoonekarhaComponent },
       { path: '**', component: NotfoundComponent, data: { Title: 'notfound' } }
     ])
   ],
