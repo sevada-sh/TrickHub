@@ -31,7 +31,7 @@ import { BlogpageComponent } from './blogpage/blogpage.component';
     blogsComponent,
     MainComponent,
     PlanComponent,
-    BlogpageComponent,
+    BlogpageComponent
   ],
   imports: [
     BrowserModule,
