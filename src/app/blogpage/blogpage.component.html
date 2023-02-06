@@ -1,78 +1,84 @@
 <div class="container mt-5 col-md-12">
-    <div class="box p-5 rounded-4" dir="rtl">
-        <div class="d-flex justify-content-center">
-            <img src="../../assets/img/main-img.png" alt="blog" class="img-fluid w-25">
-        </div>
-        <ul>
-            <li class="d-flex align-items-center">
-                <i class="bi bi-eye px-4 h5"></i>
-                <span>0 بازدید</span>
-            </li>
-            <li class="d-flex align-items-center">
-                <i class="bi bi-calendar-week px-4 h5"></i>
-                <span>تاریخ</span>
-            </li>
-            <li class="d-flex align-items-center">
-                <i [class]="heart" (click)="click ? secondheartclick() : firstheartclick()" class="h5 px-4 like"></i>
-                <span>{{liked}}</span>
-            </li>
-        </ul>
-        <hr>
-        <h2>Lorem ipsum dolor sit amet.</h2>
-        <p class="text-fluid pt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id amet unde totam voluptate! Libero, optio praesentium illum exercitationem reprehenderit dolorem quasi eius et, assumenda facilis sapiente provident. Magnam, voluptate! Eligendi repudiandae
-            sapiente, quo, veritatis molestias dolores voluptatum fugit ducimus reprehenderit ex aliquid corrupti optio tempore et harum libero nisi quibusdam!</p>
+  <div class="box p-5 rounded-4" dir="rtl">
+    <div class="d-flex justify-content-center">
+      <img src="../../assets/img/main-img.png" alt="blog big image" title="blog big image" class="img-fluid w-25">
     </div>
+    <ul>
+      <li class="d-flex align-items-center">
+        <i class="bi bi-eye px-4 h5"></i>
+        <span>0 بازدید</span>
+      </li>
+      <li class="d-flex align-items-center">
+        <i class="bi bi-calendar-week px-4 h5"></i>
+        <span>تاریخ</span>
+      </li>
+      <li class="d-flex align-items-center">
+        <i [class]="heart" (click)="click ? secondheartclick() : firstheartclick()" class="h5 px-4 like"></i>
+        <span>{{liked}}</span>
+      </li>
+    </ul>
+    <hr>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p class="text-fluid pt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id amet unde totam voluptate!
+      Libero, optio praesentium illum exercitationem reprehenderit dolorem quasi eius et, assumenda facilis sapiente
+      provident. Magnam, voluptate! Eligendi repudiandae
+      sapiente, quo, veritatis molestias dolores voluptatum fugit ducimus reprehenderit ex aliquid corrupti optio
+      tempore et harum libero nisi quibusdam!</p>
+  </div>
 </div>
 <div class="box container mt-5 mb-5 rounded-4 bg-white p-4 col-md-12" dir="rtl">
 
-    <p>
-        <i class="bi bi-tag-fill py-2 text-warning"></i> برچسب ها:
-    </p>
-    <ul class=" list-group list-group-horizontal">
-        <li class="list-unstyled bg-light mx-2 p-1 rounded-2"><a href="" class="text-decoration-none text-dark">مقاله</a>
-        </li>
-        <li class="list-unstyled bg-light mx-2 p-1 rounded-2"><a href="" class="text-decoration-none text-dark">مقاله</a>
-        </li>
-        <li class="list-unstyled bg-light mx-2 p-1 rounded-2"><a href="" class="text-decoration-none text-dark">مقاله</a>
-        </li>
-        <li class="list-unstyled bg-light mx-2 p-1 rounded-2"><a href="" class="text-decoration-none text-dark">مقاله</a>
-        </li>
-        <li class="list-unstyled bg-light mx-2 p-1 rounded-2"><a href="" class="text-decoration-none text-dark">مقاله</a>
-        </li>
-    </ul>
+  <p>
+    <i class="bi bi-tag-fill py-2 text-warning"></i> برچسب ها:
+  </p>
+  <ul class=" list-group list-group-horizontal">
+    <li class="list-unstyled bg-light mx-2 p-1 rounded-2"><a href="" class="text-decoration-none text-dark">مقاله</a>
+    </li>
+    <li class="list-unstyled bg-light mx-2 p-1 rounded-2"><a href="" class="text-decoration-none text-dark">مقاله</a>
+    </li>
+    <li class="list-unstyled bg-light mx-2 p-1 rounded-2"><a href="" class="text-decoration-none text-dark">مقاله</a>
+    </li>
+    <li class="list-unstyled bg-light mx-2 p-1 rounded-2"><a href="" class="text-decoration-none text-dark">مقاله</a>
+    </li>
+    <li class="list-unstyled bg-light mx-2 p-1 rounded-2"><a href="" class="text-decoration-none text-dark">مقاله</a>
+    </li>
+  </ul>
 </div>
 
 
 <div class="box container rounded-4 p-4 mb-5" dir="rtl">
-    <form>
-        <ul class="p-0">
-            <li class="d-flex align-items-center">
-                <i class="bi bi-chat-left-text-fill h3 px-3 text-warning"></i>
-                <h3>نظرات در رابطه با این مقاله</h3>
-            </li>
-        </ul>
-        <div class="container">
-            <div class="d-flex justify-content-around row">
-                <input type="text" name="username" class="col-md-6 col-sm-12 rounded-4 form-control w-50" placeholder="نام خود را وارد کنید">
-                <input type="text" name="userfamily" class="col-md-6 col-sm-12 rounded-4 form-control w-50" placeholder="نام خانوادگی خود را وارد کنید">
-            </div>
-        </div>
-        <textarea name="commenttextarea" class="rounded-4 p-4 mt-3 form-control col-md-12 col-sm-12" rows="10" cols="100" placeholder="نظر خود را وارد نمایید..."></textarea>
-        <br>
-        <input type="submit" value="ثبت نظر" class="btn btn-warning p-2 mt-2">
-    </form>
-    <ul class="mt-5">
-        <li class="list-unstyled commentlist mb-3 w-75 rounded-4 p-4">
-            <h5 class="d-inline">سوادا شاهوردیان <span class="text-secondary mx-4">|</span></h5>
-            <p class="d-inline text-secondary">ارسال شده در تاریخ</p>
-            <a href="" class="btn btn-success d-inline mx-2 p-1 py-0 text-decoration-none text-white"> ثبت
-        پاسخ</a>
-            <p class="text-secondary mt-4">عالی</p>
-        </li>
-        <li class="list-unstyled commentlist mb-3 reply w-75 rounded-4 p-4">
-            <h5 class="d-inline text-warning">تیم تریک هاب<span class="text-secondary mx-4">|</span></h5>
-            <p class="d-inline text-secondary">ارسال شده در تاریخ</p>
-            <p class="text-secondary mt-4">عالی</p>
-        </li>
+  <form>
+    <ul class="p-0">
+      <li class="d-flex align-items-center">
+        <i class="bi bi-chat-left-text-fill h3 px-3 text-warning"></i>
+        <h3>نظرات در رابطه با این مقاله</h3>
+      </li>
     </ul>
+    <div class="container">
+      <div class="d-flex justify-content-around row">
+        <input type="text" name="username" class="col-md-6 col-sm-12 rounded-4 form-control w-50"
+          placeholder="نام خود را وارد کنید">
+        <input type="text" name="userfamily" class="col-md-6 col-sm-12 rounded-4 form-control w-50"
+          placeholder="نام خانوادگی خود را وارد کنید">
+      </div>
+    </div>
+    <textarea name="commenttextarea" class="rounded-4 p-4 mt-3 form-control col-md-12 col-sm-12" rows="10" cols="100"
+      placeholder="نظر خود را وارد نمایید..."></textarea>
+    <br>
+    <input type="submit" value="ثبت نظر" class="btn btn-warning p-2 mt-2">
+  </form>
+  <ul class="mt-5">
+    <li class="list-unstyled commentlist mb-3 w-75 rounded-4 p-4">
+      <h5 class="d-inline">سوادا شاهوردیان <span class="text-secondary mx-4">|</span></h5>
+      <p class="d-inline text-secondary">ارسال شده در تاریخ</p>
+      <a href="" class="btn btn-success d-inline mx-2 p-1 py-0 text-decoration-none text-white"> ثبت
+        پاسخ</a>
+      <p class="text-secondary mt-4">عالی</p>
+    </li>
+    <li class="list-unstyled commentlist mb-3 reply w-75 rounded-4 p-4">
+      <h5 class="d-inline text-warning">تیم تریک هاب<span class="text-secondary mx-4">|</span></h5>
+      <p class="d-inline text-secondary">ارسال شده در تاریخ</p>
+      <p class="text-secondary mt-4">عالی</p>
+    </li>
+  </ul>
 </div>
